@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Red Hat Display", serif;
+  font-weight: 400;
+  position: relative;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+  background-color: hsl(225, 100%, 94%);
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 关键属性：z-index
+z-index 定义了元素的堆叠顺序，值越大，越靠上。
+默认情况下，z-index 的值是 auto，堆叠顺序按照文档流。 */
+  z-index: -2;
+  width: 100%;
+  height: 40vh;
+}
+
+.container {
+  background-color: hsl(225, 100%, 98%);
+  width: 40rem;
+  height: 60rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  gap: 1rem;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.img-box {
+  width: 100%;
+  height: 20rem;
+  background: url(./images/illustration-hero.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-wrapper {
+  width: 100%;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+
+.intro {
+  text-align: center;
+  width: 80%;
+  color: hsl(224, 23%, 55%);
+  font-size: 1.4rem;
+}
+
+.main {
+  width: 33rem;
+  padding: 1.5rem 2rem;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mid {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+.plan {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.price {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.4rem;
+}
+.change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  margin-left: 9rem;
+  transition: all 0.3s;
+  font-size: 1.3rem;
+}
+
+.pay {
+  text-decoration: none;
+  background-color: hsl(245, 75%, 52%);
+  width: 100%;
+  padding: 1rem 2rem;
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.cancel {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 1.4rem;
+}
+
+.change:hover,
+.change:active {
+  text-decoration: none;
+  color: #a78bfa;
+}
+
+.pay:hover,
+.pay:active {
+  background-color: #a78bfa;
+}
+
+.cancel:hover,
+.cancel:active {
+  color: black;
+}
+
